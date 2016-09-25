@@ -4,6 +4,8 @@ using namespace std;
 
 void main()
 {
+#if 0
+
 	list<int> Link;
 	int i,key,item;
 	for (i=0;i < 10;i++)
@@ -31,7 +33,15 @@ void main()
 		p++;
 	}
 	cout<<endl;
-	
+#endif	
+
+	char buf[]="HAPPY BRITHDAY";
+	char rinbuf[10];
+	cout.write(buf,10);
+	cout<<"\n";
+	cin.read(rinbuf,6);
+	cout.write(rinbuf,cin.gcount());
+
 	getchar();
 
 	return ;
