@@ -1,26 +1,35 @@
 #include <iostream>
 #include <list>
+#include <vector>
+#include <algorithm>
 using namespace std;
 
 void main()
 {
-#if 0
 
-	list<int> Link;
+
+	//list<int> Link;
+	vector<int> Link;
 	int i,key,item;
+	cout << "cin 10 num to List: ";
 	for (i=0;i < 10;i++)
 	{
 		cin>>item;
-		Link.push_front(item);
-	}
+		//Link.push_front(item);
+		Link.push_back(item);
+	}	
+	sort(Link.begin(),Link.end());
+
 	cout << "List: ";
-	list<int>::iterator p = Link.begin();
+	vector<int>::iterator p = Link.begin();
 	
 	while (p!=Link.end())
 	{
 		cout<<*p << " ";
 		p++;
 	}
+	//while(1);
+#if 0
 	cout << endl;
 	cin >>key;
 
@@ -32,15 +41,16 @@ void main()
 		cout<< *p << " " ;
 		p++;
 	}
-	cout<<endl;
-#endif	
+	cout<<endl;	
 
 	char buf[]="HAPPY BRITHDAY";
 	char rinbuf[10];
 	cout.write(buf,10);
 	cout<<"\n";
+
 	cin.read(rinbuf,6);
 	cout.write(rinbuf,cin.gcount());
+#endif
 
 	getchar();
 
