@@ -11,7 +11,7 @@ void main()
 	//list<int> Link;
 	vector<int> Link;
 	int i,key,item;
-	cout << "cin 10 num to List: ";
+	cout << "cin 10 num to List: \n";
 	for (i=0;i < 10;i++)
 	{
 		cin>>item;
@@ -28,7 +28,7 @@ void main()
 		cout<<*p << " ";
 		p++;
 	}
-	//while(1);
+	cout<< endl;
 #if 0
 	cout << endl;
 	cin >>key;
@@ -51,8 +51,12 @@ void main()
 	cin.read(rinbuf,6);
 	cout.write(rinbuf,cin.gcount());
 #endif
+	char c = 'b';
+	cout <<"put char 'b' break !" <<endl;
+	while (c != getchar())
+	{
 
-	getchar();
+	}
 
 	return ;
 }
